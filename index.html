@@ -4,13 +4,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
     <title>Document</title>
-</head>
-<body>
-    <ol>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-    </ol>
-</body>
+</head><body>
+    <form>
+        <input type="text" value="내 점수" readonly>
+        <input type="text" name="점수표시" id="point" readonly>
+    </form>
+    <table border="1" bordercolor="blue" width ="500" height="300" align = "center" >
+        <tr>
+            <td rowspan="2">장소</td>
+            <td colspan="3">단계</td>
+            <td rowspan="2">지금</td>
+        </tr>
+        <tr>
+            <td>소생</td>
+            <td>장성</td>
+            <td>완성</td>
+        </tr>
+        <tr>
+            <td>정주</td>
+            <td><input class="정주" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="정주" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="정주" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id정주"></td>
+        </tr>
+        <tr>
+            <td>안주</td>
+            <td><input class="안주" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="안주" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="안주" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id안주"></td>
+        </tr>
+        <tr>
+            <td>흑석동</td>
+            <td><input class="흑석동" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="흑석동" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="흑석동" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id흑석동"></td>
+        </tr>
+        <tr>
+            <td>문경새재</td>
+            <td><input class="문경새재" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="문경새재" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="문경새재" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id문경새재"></td>
+        </tr>
+        <tr>
+            <td>영천교</td>
+            <td><input class="영천교" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="영천교" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="영천교" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id영천교"></td>
+        </tr>
+        <tr>
+            <td>부산범냇골</td>
+            <td><input class="부산범냇골" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="부산범냇골" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="부산범냇골" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id부산범냇골"></td>
+        </tr>
+        <tr>
+            <td>서대문 형무소</td>
+            <td><input class="서대문형무소" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="서대문형무소" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="서대문형무소" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id서대문형무소"></td>
+        </tr>
+        <tr>
+            <td>야목교회</td>
+            <td><input class="야목교회" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="야목교회" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="야목교회" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id야목교회"></td>
+        </tr>
+        <tr>
+            <td>계룡산 갑사</td>
+            <td><input class="계룡산갑사" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="계룡산갑사" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="계룡산갑사" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id계룡산갑사"></td>
+        </tr>
+        <tr>
+            <td>전 본부교회</td>
+            <td><input class="전본부교회" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="전본부교회" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="전본부교회" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id전본부교회"></td>
+        </tr>
+        <tr>
+            <td>파주원전</td>
+            <td><input class="파주원전" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="파주원전" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="파주원전" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id파주원전"></td>
+        </tr>
+        <tr>
+            <td>유니버셜 아트센터</td>
+            <td><input class="유비버셜" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="유비버셜" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="유비버셜" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id유비버셜"></td>
+        </tr>
+        <tr>
+            <td>한남 국제연수원</td>
+            <td><input class="한남국제연수원" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="한남국제연수원" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="한남국제연수원" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id한남국제연수원"></td>
+        </tr>
+        <tr>
+            <td>축복나무</td>
+            <td><input class="축복나무" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="축복나무" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="축복나무" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id축복나무"></td>
+        </tr>
+        <tr>
+            <td>선문대학교</td>
+            <td><input class="선문대학교" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="선문대학교" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="선문대학교" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id선문대학교"></td>
+        </tr>
+        <tr>
+            <td>HJ메그놀리아국제병원</td>
+            <td><input class="HJ" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="HJ" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="HJ" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="idHJ"></td>
+        </tr>
+        <tr>
+            <td>청해가든</td>
+            <td><input class="청해가든" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="청해가든" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="청해가든" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id청해가든"></td>
+        </tr>
+        <tr>
+            <td>선학UP대학원대학교</td>
+            <td><input class="UP" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="UP" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="UP" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="idUP"></td>
+        </tr>
+        <tr>
+            <td>해양 천정궁</td>
+            <td><input class="해양천정궁" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="해양천정궁" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="해양천정궁" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id해양천정궁"></td>
+        </tr>
+        <tr>
+            <td>청심평화월드센터</td>
+            <td><input class="월드센터" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="월드센터" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="월드센터" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id월드센터"></td>
+        </tr>
+        <tr>
+            <td>천원궁</td>
+            <td><input class="천원궁" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="천원궁" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="천원궁" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id천원궁"></td>
+        </tr>
+        <tr>
+            <td>천보원</td>
+            <td><input class="천보원" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="천보원" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="천보원" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id천보원"></td>
+        </tr>
+        <tr>
+            <td>발왕산</td>
+            <td><input class="발왕산" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="발왕산" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="발왕산" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id발왕산"></td>
+        </tr>
+        <tr>
+            <td>천승원</td>
+            <td><input class="천승원" type="button" value="소생" onclick="getname(this)"></td>
+            <td><input class="천승원" type="button" value="장성" onclick="getname(this)"></td>
+            <td><input class="천승원" type="button" value="완성" onclick="getname(this)"></td>
+            <td id="id천승원"></td>
+        </tr>
+        <tr>
+            <td>천정궁</td>
+            <td colspan="3" align="center"><input class="천정궁" type="button" value="천정궁" onclick="getname(this)"></td>
+            <td id="id천정궁"></td>
+        </tr>
+    </table>
+    </body>
+    <script>
+        function getname(obj){
+            console.log(obj);
+            console.log(obj.className);
+            let id = "id"+obj.className;
+            console.log(id);
+            console.log(obj.value);
+            document.getElementById(id).innerHTML = obj.value;
+        }
+    </script>
 </html>
